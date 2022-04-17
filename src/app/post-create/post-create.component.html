@@ -1,0 +1,29 @@
+<p style="text-align: center">
+  <mat-toolbar color="primary">
+    <div class="center">
+    <h2 style="text-align:center"><b>Flower Shopping App</b></h2>
+  </div>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+</p>
+<div class="center">
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput name="name" [(ngModel)] = "name"/>
+  </mat-form-field>
+</form>
+</div>
+<p style="text-align: center">(Two way data binding)</p>
+<p style="text-align: center"><b>Welcome {{name}}, Thank you for visiting !</b></p>
+<hr>
+<hr>
+<p style="text-align: center">(String interpretation and Property binding)</p>
+<p style="text-align: center">You are searching for {{product}}!</p>
+<p style="text-align: center; width:40; height:50"><img [src] ="imageUrl"/></p>
+<br>
+<p style="text-align: center">(Event binding)</p>
+<p style="text-align: center"><button mat-raised-button color="primary" (click)="onAddCart()">Add to Cart</button></p>
+
+<p style="text-align: center"><b>{{msg}}</b></p>
+
